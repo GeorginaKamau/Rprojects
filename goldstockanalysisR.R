@@ -35,7 +35,17 @@ library(dplyr)
 library(tseries)
 
 
+# Load data into dataframe
+df <- read.csv('C:\\Users\\GKamau\\Downloads\\goldstock.csv', header = TRUE)
 
+# View 5 random rows of data (you can adjust the number as needed)
+sampled_data <- df %>% sample_n(5)
+
+# View the sampled data
+View(sampled_data)
+
+#measures of central tendancy
+summary(df)
 
 ##EXPLORATORY DATA ANALYSIS
 
